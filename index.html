@@ -25,12 +25,21 @@
             <br>
             </div><br>
             <form action="https://formsubmit.co/suheyb37@gmail.com" method="POST">
+                <!--Honeypot-->
+                <input type="text" name="_honey" style="display: none;">
+
+
+                <!--Disable Captcha-->
+                <input type="hidden" name="_captcha" value="false">
+
+
                 <h4>Your email: <span style="color: red; font-weight: bold;">*</span></h4>
             <input type="email" name="email" placeholder="Email" required><br>
             <br><h4>Your Name: <span style="color: red; font-weight: bold;">*</span></h4>
             <input type="Name" name="Name" placeholder="Name" required>
             <h2>Rate your experience on our website 10 being the best and 1 being the worst: <span style="color: red; font-weight: bold;">*</span></h2><br>
-            <div class="rating" aria-required="true" >
+            <div class="rating">
+            <label>
                 <input type="radio" name="1 rating" id="rate1"><label for="rate1" 
                 >1</label><p>  &nbsp  </p>
                 <input type="radio" name="2 rating" id="rate2"><label for="rate2"
@@ -52,24 +61,18 @@
                 <input type="radio" name="10 rating" id="rate10"><label for="rate10"
                 >10</label> <p>  &nbsp  </p>
             </div>
+            
 
             <h2>Please could you kindly explain the reasoning for your rating (optional)</h2><br>
             <textarea name="txtMsg" class="form-control" placeholder="Your message or suggestion"></textarea><br>
         </div>
         <div class="col-md-6">
-            <div class="form-group" aria-required="true">
-                <select required>
-                <h3>Are you satisfied with our servive? <span style="color: red; font-weight: bold;">*</span> </h3><br>
-                Yes<option type="radio" name="satisfaction: Yes" id="Yes"></option>
-                No<option type="radio" name="satisfaction: No" id="No"></option>
-            </select>
+            <div class="form-group">
+                <h2>Are you satisfied with our servive? (optional)</h2><br>
+                Yes<input type="radio" name="satisfaction: Yes" id="Yes"></input>
+                No<input type="radio" name="satisfaction: No" id="No"></input>
             </div>
 <br>
-<select required name="How did you complete this task today?">
-    <h2>How did you complete this task today?</h2>
-    <option value="Satisfaction: Yes">Yes</option><br>
-    <option value="Satisfaction: No">No</option>
-</select>
         </div>
     </div>
     <form>
@@ -86,6 +89,7 @@
 </form>
 </form>
 </form>
+
 
 
 </body>
