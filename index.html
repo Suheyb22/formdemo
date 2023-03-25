@@ -30,8 +30,8 @@
             <br><h4>Your Name: <span style="color: red; font-weight: bold;">*</span></h4>
             <input type="Name" name="Name" placeholder="Name" required>
             <h2>Rate your experience on our website 10 being the best and 1 being the worst: <span style="color: red; font-weight: bold;">*</span></h2><br>
-            <div class="rating" >
-                <input type="radio" name="1 rating" required id="rate1"><label for="rate1" 
+            <div class="rating" aria-required="true" >
+                <input type="radio" name="1 rating" id="rate1"><label for="rate1" 
                 >1</label><p>  &nbsp  </p>
                 <input type="radio" name="2 rating" id="rate2"><label for="rate2"
                 >2</label><p>  &nbsp  </p>
@@ -57,7 +57,7 @@
             <textarea name="txtMsg" class="form-control" placeholder="Your message or suggestion"></textarea><br>
         </div>
         <div class="col-md-6">
-            <div class="form-group">
+            <div class="form-group" aria-required="true">
                 <h3>Are you satisfied with our servive? <span style="color: red; font-weight: bold;">*</span> </h3><br>
                 Yes<input type="radio" name="satisfaction: Yes" id="Yes" required>
                 No<input type="radio" name="satisfaction: No" id="No" required>
